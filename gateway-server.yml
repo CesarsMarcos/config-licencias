@@ -8,13 +8,13 @@ spring:
       - id: msvc-licencias
         uri: lb://msvc-licencias
         predicates:
-          - Path=/api/v1/licencias/**
+          - Path=/api/v1/msvc-licencias/**
         filters:
           - StripPrefix=3
 
       - id: msvc-solicitantes
         uri: lb://msvc-solicitantes
         predicates:
-          - Path=/api/v1/solicitantes/**
+          - Path=/api/v1/msvc-solicitantes/**
         filters:
           - StripPrefix=3
