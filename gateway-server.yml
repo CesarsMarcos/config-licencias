@@ -31,7 +31,7 @@ spring:
         predicates:
           - Path= /api/msvc-usuarios/**
         filters:
-          - Stripfix=2
+          - StripPrefix=2
 
 jwt:
   security:
